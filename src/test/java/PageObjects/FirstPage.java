@@ -10,7 +10,7 @@ public class FirstPage
 {
 	 public  AppiumDriver <MobileElement> driver;
 
-    private	By skip = By.id("com.gaana:id/txt_skip");
+    private	By save = By.id("com.gaana:id/btn_save");
    
 	
     public FirstPage(AppiumDriver driver)
@@ -18,9 +18,9 @@ public class FirstPage
 		this.driver = driver;
 	}
 	
-    public MobileElement skipm()
+    public MobileElement savebutton()
     {
-    	return (MobileElement) driver.findElement(skip);
+    	return (MobileElement) driver.findElement(save);
     }
 
 
